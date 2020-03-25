@@ -17,7 +17,7 @@ services:
       - "500:500/udp"
       - "4500:4500/udp"
     volumes:
-      - ./vpn_server.config:/etc/vpnserver/vpn_server.config
+      - ./vpn_server.config:/usr/local/vpnserver/vpn_server.config
     build:
       context: .
       
