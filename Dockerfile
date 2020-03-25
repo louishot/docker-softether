@@ -14,7 +14,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     tar -xzvf /tmp/softether-vpnserver.tar.gz -C /usr/local/ &&\
     rm -rf /tmp/softether-vpnserver.tar.gz &&\
     make i_read_and_agree_the_license_agreement &&\
-	chmod 755 /usr/local/vpnserver/vpnserver start
+	chmod 755 /usr/local/vpnserver/vpnserver
 	
 CMD ["/usr/local/vpnserver/vpnserver","start"]
 
