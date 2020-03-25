@@ -16,5 +16,6 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     make i_read_and_agree_the_license_agreement &&\
 	chmod 755 /usr/local/vpnserver/vpnserver
 	
-CMD ["/usr/local/vpnserver/vpnserver","start"]
+CMD /usr/local/vpnserver/vpnserver start; tail -f /dev/null
+
 
