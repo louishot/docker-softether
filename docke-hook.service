@@ -1,0 +1,15 @@
+#/usr/lib/systemd/system/docker-hook.service
+[Unit]
+Description=Specific outbound IP with Docker
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/root/docker-softether/hook.sh
+ExecReload=/root/docker-softether/hook.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
