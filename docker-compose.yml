@@ -9,7 +9,15 @@ services:
     network_mode: "bridge"
     ports:
       - "443:443/tcp"
+      - "992:992/tcp"
+      - "1194:1194/tcp"
+      - "1194:1194/udp"
+      - "1701:1701/udp"
+      - "5555:5555/tcp"
+      - "500:500/udp"
+      - "4500:4500/udp"
     volumes:
       - ./vpn_server.config:/etc/vpnserver/vpn_server.config
     build:
       context: .
+      
