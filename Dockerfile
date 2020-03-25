@@ -16,7 +16,6 @@ RUN yum -y --setopt=tsflags=nodocs update && \
     make i_read_and_agree_the_license_agreement
 	
 
-ADD runner.sh /usr/local/vpnserver/runner.sh
-RUN chmod 755 /usr/local/vpnserver/runner.sh
-ENTRYPOINT ["/usr/local/vpnserver/runner.sh"]
+
+ENTRYPOINT ["/usr/local/vpnserver/vpnserver"]
 
