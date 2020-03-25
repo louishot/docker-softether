@@ -17,6 +17,6 @@ RUN yum -y --setopt=tsflags=nodocs update && \
 	chmod 755 /usr/local/vpnserver/vpnserver start
 	
 
-CMD
+
 ENTRYPOINT ["/usr/local/vpnserver/vpnserver","start"]
 
