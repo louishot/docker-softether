@@ -1,0 +1,9 @@
+-- Install
+git clone https://github.com/louishot/docker-softether.git
+docker-compose up -d
+
+-- docke-hook.service
+A systemd hook service after docker daemon started
+
+-- hook.sh
+A bash script what you want to exec
