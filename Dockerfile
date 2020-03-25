@@ -3,7 +3,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 LABEL Vendor="CentOS" \
       License=GPLv2 \
       Version=2.4.6-40
-ENV VERSION https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.25-9656-rtm/softether-vpnserver-v4.25-9656-rtm-2018.01.15-linux-x64-64bit.tar.gz
+ENV VERSION https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.29-9680-rtm/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 WORKDIR /usr/local/vpnserver
 
 
