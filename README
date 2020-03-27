@@ -1,5 +1,6 @@
 -- Install
-git clone https://github.com/louishot/docker-softether.git
+git clone https://github.com/louishot/docker-softether.git && cd docker-softether
+touch vpn_server.config
 docker-compose up -d
 
 -- docke-hook.service
